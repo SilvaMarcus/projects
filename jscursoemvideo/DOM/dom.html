@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li{
+        font: bolder 10pt Arial ;
+        color: rgb(151, 6, 6);
+        text-decoration: underline;
+    }
+#area, #treino{
+    font: normal 12pt Arial ;
+    background-color: rgb(92, 225, 92);
+    color: white;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+main{
+    margin: 20px;
+}
+
+</style>
+
+<body>
+
+    <main>
+
+        <h2>Dom Selectors</h2>
+        <ul>
+            <li>TagName</li>
+            <li>ID</li>
+            <li>Name</li>
+            <li>ClassName</li>
+            <li>querySelector</li>
+        </ul>
+
+        <h2>Eventos Dom</h2>
+        <h3>Eventos de Mouse</h3>
+
+        <ul>
+            <li>mouseenter</li>
+            <p>Quando chega o mouse dentro da div, dispara o evento mouseenter</p>
+            <li>mousemove</li>
+            <p>Enquanto eu estiver movendo o mouse dentro da div sera acionado o evento mousemove</p>
+            <li>mousedown</li>
+            <p>Euquanto o mouse estiver clicado e pressionado o evento é o mousedown</p>
+            <li>mouseup</li>
+            <p>ao soltar o mouse o evento é o mouseup</p>
+            <li>cliclk</li>
+            <p>o evento de apenas clicar e soltar de uma vez </p>
+            <li>mouseout</li>
+            <p>quando mover o mouse para fora da div, aciona o mouseout</p>
+        </ul>
+
+        <p><i>existem muitos outros eventos dom</i></p>
+
+        <div id="area">
+            INTERAJA...
+        </div>
+  
+    </main>
+
+    <script>
+         var a = window.document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+    
+            a.innerText = 'Clicou'
+            a.style.background = 'red' 
+        }
+
+        function entrar() {
+            a.innerText = 'entrou'
+            a.style.background = 'black' 
+        }
+
+        function sair(){
+            a.innerText = ('Saiu')
+           a.style.background = 'rgb(92, 225, 92)' 
+        }
+
+     
+
+    
+
+
+    </script>
+
+</html>

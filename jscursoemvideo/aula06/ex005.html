@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body{
+            background-color: rgba(47, 53, 52, 0.877);
+            color: aliceblue;
+            font: normal 13pt Arial;
+        }
+         
+        p{
+            font-size: 1.4em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">OLA MUNDO</h1>
+    <h1>INICIANDO ESTUDOS COM DOM </h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprend do usar o <strong>DOM</strong> em JavaScript </p>
+    <div id="msg"> Clique em mim </div>
+   
+<script>
+
+//         ======getElementsByTagName =======
+/*     var corpo = window.document.body
+    corpo.style.background='blue';
+    var p1 = document.getElementsByTagName('p')[0]
+    document.write( ' esta escrito assim  ---   ' + p1.innerHTML) */
+//        ====getElementsByName===
+/*     var di = document.getElementById('msg')
+    di.style.background='red'
+   document.getElementById('t1').style.color='green'
+ */
+   //========== getElementsByquerySelector===
+
+ var titulo1 = window.document.querySelector('h1#titulo')
+ titulo1.style.background='red'
+
+
+</script>
+
+     
+
+    
+</body>
+</html>
