@@ -7,30 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>treinodd</h1>
-
+   
     <script>
-         function soma (x, y){
-     return x + y
- }
+        
+        function soma (x,y){
 
- function subtrair (x,y){
-    return x - y
- }
+            return x + y 
 
- function divisao (x,y){
-     return x/y
- }
+        }      
+        function subtrair (x,y){
 
- function calculadora (x,y,operacao){
-    return  operacao(x,y)
- }
+            return x - y 
 
+}   
+
+    function calculadora (xx,yy,operacao){
+        return operacao(xx,yy)
+    }
  
-      
 
+         var xx = Number(prompt('digite valor de X'))
+         var yy = Number(prompt('digite valor de Y')) 
+         var operacao = prompt('digite a operacao')
 
-
+        var resultado = calculadora(operacao(xx,yy))
+        alert(resultado)
 
     </script>
 </body>
