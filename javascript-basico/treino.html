@@ -9,29 +9,17 @@
 <body>
    
     <script>
-        
-        function soma (x,y){
+var nomes = []
+var quantidadeConvidados = Number(prompt(' Qual Total de Convidados ? '))
 
-            return x + y 
 
-        }      
-        function subtrair (x,y){
+for(i=0; i <quantidadeConvidados; i++){
 
-            return x - y 
+    nomes[i] = prompt(' Qual nome do Convidado ? ' + i)
 
-}   
+    
 
-    function calculadora (xx,yy,operacao){
-        return operacao(xx,yy)
-    }
- 
-
-         var xx = Number(prompt('digite valor de X'))
-         var yy = Number(prompt('digite valor de Y')) 
-         var operacao = prompt('digite a operacao')
-
-        var resultado = calculadora(operacao(xx,yy))
-        alert(resultado)
+}
 
     </script>
 </body>
