@@ -1,0 +1,13 @@
+
+
+ {
+    "nome": "marcus",
+    "idade": 25,
+    "esta trabalhando": true,
+    "detalhes_profissao": {
+        "profissao": "programador",
+        "Empresa": "Service Now"
+    },
+
+    "hobbies": ["programar", "Estudar","Ler"]
+}
