@@ -1,6 +1,10 @@
 
 let calcular = document.getElementById('calcular');
 let resultado = document.getElementById('resultado');
+let nome = document.getElementById('nome').value;
+let altura = document.getElementById('altura').value;
+let peso = document.getElementById('peso').value;
+let classificacao = '';
 
 function imc (){
 
@@ -16,15 +20,18 @@ function imc (){
        if (valorImc < 18.5){
         classificacao = 'Voce esta abaixo do peso ';
     }
-    else if (valorImc < 25){
+     if (valorImc < 25){
     classificacao = ' voce esta com peso ideal ';
      }
 
+     if (valorImc > 25){
+        classificacao = ' Voce esta acima do peso'
+     }
 
-    resultado.textContent = nome + ' seu imc é de ' + valorImc + classificacao;
+    resultado.textContent = nome + ' seu imc é de ' + valorImc + classificacao;      
     }
     else{
-        resultado.textContent = 'Preencha Todos os Campos';
+        resultado.textContent = ' Preencha Todos os Campos';
     }
 
 
