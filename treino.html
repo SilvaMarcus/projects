@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+ 
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:hsl(217, 54%, 11%);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main{
+  width: 335px;
+  height: 580px;
+  padding: 17px;
+  border-radius: 11px;
+  background-color: hsl(216, 50%, 16%);
+  margin: 0 auto; 
+  margin-top: 20px;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.438);
+}
+
+.imagem{
+  padding: 5px;
+}    
+
+.imagem img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.main h1 {  
+  font-size: 1.2em;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.main p{
+  color: hsl(215, 51%, 70%);
+  margin: 8px;
+  padding: 3px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+} 
+
+.dados{
+  display: flex;
+  margin: 20px 0 5px;
+  justify-content: space-between;
+  border-bottom: 1.5px hsla(215, 52%, 70%, 0.158) solid ;
+  padding: 15px;
+  align-items: center;
+}
+
+.dadoEsquerda{
+  font-weight: normal;
+  color: hsl(178, 100%, 50%);
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}
+
+.dadoDireita{
+  color: hsl(215, 51%, 70%);
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  
+}
+
+.dadoEsquerda::before {
+    content: url(../images/icon-ethereum.svg);
+    padding: 5px;
+        
+}
+
+.dadoDireita::before{
+  content: url(images/icon-clock.svg);
+  padding: 5px;
+}
+
+span{
+  color: rgba(255, 255, 255, 0.671);
+}
+     
+  .credits{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+.avatar{
+  width: 30px;
+  height: 30px;
+}
+  .avatar img{
+    width: 100%;
+    height: 100%;
+    border: 1.9px solid rgb(255, 255, 255);
+    border-radius: 35px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="main">
+
+    <div class="card">
+      <div class="imagem">
+        <img src="../images/image-equilibrium.jpg" alt="">
+      </div>
+        <h1>Equilibrium  #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="dados">
+            <div class="dadoEsquerda">0.041 ETH</div>
+            <div class="dadoDireita"> 2 days left</div>
+        </div><!-- dados -->
+  
+       <div class="credits">
+         <div class="avatar"><img src="images/marcusavatar.png" alt=""></div>
+         <p>Creation of <span>Marcus Silva</span></p> 
+       </div> <!-- credits -->
+    </div> <!-- /card -->
+
+</div> <!-- /main -->
+
+  <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marcus vinicius </a>.
+  </div>  -->
+</body>
+</html>
