@@ -18,16 +18,6 @@ const turnOn = {
      // setinterval chamando a funcao changeColor com argumento de tempo para troca 1000 nanosegundos.
 }
 
-
-
-
-
-
-
-
-
-
-
 // ======   fazendo o botao automatico para troca de cores automatica.
 
 const changeColor = () =>{
