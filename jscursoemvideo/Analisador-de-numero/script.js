@@ -1,29 +1,28 @@
-let num = document.querySelector('input#fnum')
-let lista = document.querySelector('selector#flista')
-let res = document.querySelector('div#res')
-let valores = []
+let num = document.getElementById('fnum')
+let lista = document.querySelector('select#flista');
+let res = document.querySelector('div#res');
+let valores = [];
 
+function adicionar() {
+    if(isNumero(num.value) && inLista(num.value, valores)) {
+        window.alert('Tudo Okay!');
+    }  else {
+        window.alert('Valor Invalido ou Ja Existente');
+    } // else 
+    } // adicionar
 
 function isNumero(n){
-    if(Number(n) >= 1 && Number(n) <=100){
+    if(Number(n) >= 1){
         return true
     } else {
         return false
-    }
-}
+    } // else 
+}// function 
 
-function insLista(n, l){
-    if (l.indexOf (Number(n)) != -1) {
+function inLista(n, l){
+    if (l.indexOf(Number(n)) != -1){
         return true
     } else {
         return false
-    }
-}
-
-function adicionar () {
-   if (isNumero(num.value) && insLista(num.value, valores)){
-        window.alert('Tudo okay')
-   } else {
-       window.alert('Valor Invalido ou Ja existente')
-   }
-}
+    }// else 
+}   // function 
