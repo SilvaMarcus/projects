@@ -23,17 +23,14 @@ const cliente = {
   };   
 
 
-
-
-
  function oferta (obj){
-    const propsClientes = Object.keys(obj);
+    const propsClientes = Object.keys(obj); // Object.keys retorna as chaves do objeto 
     if (propsClientes.includes('dependentes')) // se tiver 'includes' dependentes no array criado com obeject keys... entao 
     {
        console.log('Oferta de Seguro de Vida para ' + obj.nome);
     };
  } ;
 
- console.log(Object.keys(cliente))
- //oferta(cliente);
+
+ oferta(cliente);
 

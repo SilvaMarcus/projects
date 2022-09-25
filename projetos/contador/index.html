@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+       
+          main {
+               width: 100vw;
+               height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+          .divpai{
+               text-align: center;
+          }
+          h1{
+               font-size: 5em;
+          }
+          button {
+               width: 15em;
+               height: 7em;
+          }
+     </style>
+</head>
+<body>
+     <main>
+          <div class="divpai">
+     
+               <h1 class="titulo"> CONTADOR </h1>
+                    <h1 class="contador">5</h1>
+                    <button>CONTAR</button>
+          </div>
+     </main>
+
+     <script>
+         let contador = document.querySelector('.contador')
+         let valueContador = contador.innerHTML;
+         let valorInicial = valueContador;
+         
+         setInterval(function(){
+         
+         valueContador--
+
+           if(valueContador == 0){
+               valueContador = valorInicial
+               valorInicial = valorInicial*2
+          } 
+
+          contador.innerHTML = valueContador
+
+         }, 600)
+          
+
+     </script>
+
+</body>
+</html>

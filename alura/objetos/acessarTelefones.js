@@ -6,7 +6,7 @@ const cliente = {
     telefones: ['119999999', '77777777']
 };
 
-cliente.telefones.forEach (conteudo => 
-    console.log(conteudo)
+cliente.telefones.forEach (element => 
+    console.log(element)
     ) 
 
